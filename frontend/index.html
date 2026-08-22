@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Career Toolkit</p>
+        <h1>Resume Analyzer</h1>
+      </div>
+      <div class="header-actions">
+        <span class="status-pill">Live scoring</span>
+        <button id="resetBtn" class="secondary-btn" type="button">Reset</button>
+      </div>
+    </header>
+
+    <main class="app-grid">
+      <section class="panel input-panel">
+        <div class="field-row two-col">
+          <label class="field">
+            <span>Role</span>
+            <select id="roleSelect">
+              <option value="AI Application Engineer">AI Application Engineer</option>
+              <option value="AI/ML Engineer">AI/ML Engineer</option>
+              <option value="Automation Test Engineer">Automation Test Engineer</option>
+              <option value="Backend Developer">Backend Developer</option>
+              <option value="Business Analyst">Business Analyst</option>
+              <option value="Cloud Engineer">Cloud Engineer</option>
+              <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+              <option value="Data Analyst">Data Analyst</option>
+              <option value="Data Engineer">Data Engineer</option>
+              <option value="Data Scientist">Data Scientist</option>
+              <option value="DevOps Engineer">DevOps Engineer</option>
+              <option value="Frontend Developer">Frontend Developer</option>
+              <option value="Full Stack Developer">Full Stack Developer</option>
+              <option value="Full Stack Engineer">Full Stack Engineer</option>
+              <option value="Generative AI Engineer">Generative AI Engineer</option>
+              <option value="Java Developer">Java Developer</option>
+              <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+              <option value="Node.js Developer">Node.js Developer</option>
+              <option value="Product Designer">Product Designer</option>
+              <option value="Product Manager">Product Manager</option>
+              <option value="Prompt Engineer">Prompt Engineer</option>
+              <option value="Python Developer">Python Developer</option>
+              <option value="QA Engineer">QA Engineer</option>
+              <option value="React Developer">React Developer</option>
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="UI/UX Designer">UI/UX Designer</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Experience level</span>
+            <select id="levelSelect">
+              <option value="Fresher">Fresher / Entry-Level</option>
+              <option value="Junior">Junior-Level</option>
+              <option value="Mid">Mid-Level</option>
+              <option value="Senior">Senior-Level</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Paste your resume</span>
+          <textarea id="resumeInput"
+            placeholder="Paste resume text here...">Senior Frontend Developer with 5+ years of experience building scalable web applications using JavaScript, TypeScript, React, Node.js, and REST APIs. Led product features for e-commerce platforms, collaborated with product managers and designers, and improved performance by 35%. Strong experience with CSS, Git, testing, accessibility, and agile delivery.</textarea>
+        </label>
+
+        <label class="field">
+          <span>Job description</span>
+          <textarea id="jobInput"
+            placeholder="Paste the target job description here...">We are looking for a Frontend Developer with strong experience in React, JavaScript, TypeScript, UI design, accessibility, API integration, and collaboration with cross-functional teams. Experience with Node.js, Git, and performance optimization is a plus.</textarea>
+        </label>
+
+        <div class="filter-bar">
+          <button class="filter-chip active" type="button" data-focus="all">All</button>
+          <button class="filter-chip" type="button" data-focus="skills">Skills</button>
+          <button class="filter-chip" type="button" data-focus="experience">Experience</button>
+          <button class="filter-chip" type="button" data-focus="soft">Soft skills</button>
+        </div>
+
+        <button id="analyzeBtn" class="primary-btn" type="button">Analyze Resume</button>
+      </section>
+
+      <section class="panel result-panel">
+        <div class="result-header">
+          <div>
+            <p class="eyebrow subtle">Match summary</p>
+            <h2>Candidate fit</h2>
+          </div>
+          <button class="mini-btn" type="button">Export report</button>
+        </div>
+
+        <div class="score-ring-wrap">
+          <div class="score-ring" data-score="0">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-bg" cx="60" cy="60" r="46"></circle>
+              <circle class="ring-progress" cx="60" cy="60" r="46"></circle>
+            </svg>
+            <div class="score-text">
+              <strong id="overallScore">0%</strong>
+              <span>Fit score</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card accent">
+            <span class="label">Keyword match</span>
+            <strong id="keywordMatch">0%</strong>
+          </div>
+          <div class="stat-card">
+            <span class="label">Missing skills</span>
+            <strong id="missingCount">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="label">Experience fit</span>
+            <strong id="experienceFit">0%</strong>
+          </div>
+          <div class="stat-card">
+            <span class="label">Word count</span>
+            <strong id="wordCount">0</strong>
+          </div>
+        </div>
+
+        <div class="analysis-block">
+          <h3>Skills matched</h3>
+          <div id="matchedSkills" class="chip-list">
+            <span class="chip neutral">No data yet</span>
+          </div>
+        </div>
+
+        <div class="analysis-block">
+          <h3>Missing skills</h3>
+          <div id="missingSkills" class="chip-list">
+            <span class="chip warning">No data yet</span>
+          </div>
+        </div>
+
+        <div class="analysis-block">
+          <h3>Suggestions</h3>
+          <ul id="tipsList" class="tips-list">
+            <li>Paste the resume and job description to begin.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

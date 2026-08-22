@@ -2,7 +2,8 @@
 // AI Resume Analyzer - Frontend
 // =====================================================
 
-const API_URL = "http://127.0.0.1:8000";
+// LIVE RENDER BACKEND
+const API_URL = "https://ai-resume-analyzer-3fap.onrender.com";
 
 // -----------------------------------------------------
 // DOM elements
@@ -25,7 +26,6 @@ const wordCount = document.getElementById("wordCount");
 const matchedSkills = document.getElementById("matchedSkills");
 const missingSkills = document.getElementById("missingSkills");
 const tipsList = document.getElementById("tipsList");
-
 
 // -----------------------------------------------------
 // Analyze Resume
@@ -97,7 +97,6 @@ analyzeBtn.addEventListener("click", async () => {
     }
 });
 
-
 // -----------------------------------------------------
 // Display Results
 // -----------------------------------------------------
@@ -116,7 +115,6 @@ function displayResults(data) {
     experienceFit.textContent = `${experience}%`;
     wordCount.textContent = words;
 
-
     // ---------------------------------------------
     // Matched skills
     // ---------------------------------------------
@@ -130,6 +128,7 @@ function displayResults(data) {
         const span = document.createElement("span");
         span.className = "chip neutral";
         span.textContent = "No matched skills";
+
         matchedSkills.appendChild(span);
 
     } else {
@@ -144,7 +143,6 @@ function displayResults(data) {
             matchedSkills.appendChild(span);
         });
     }
-
 
     // ---------------------------------------------
     // Missing skills
@@ -176,7 +174,6 @@ function displayResults(data) {
         });
     }
 
-
     // ---------------------------------------------
     // Tips
     // ---------------------------------------------
@@ -197,13 +194,11 @@ function displayResults(data) {
         tips.forEach(tip => {
 
             const li = document.createElement("li");
-
             li.textContent = tip;
 
             tipsList.appendChild(li);
         });
     }
-
 
     // ---------------------------------------------
     // Score ring
@@ -217,11 +212,12 @@ function displayResults(data) {
         const circumference = 2 * Math.PI * radius;
 
         ring.style.strokeDasharray = circumference;
+
         ring.style.strokeDashoffset =
-            circumference - (score / 100) * circumference;
+            circumference -
+            (score / 100) * circumference;
     }
 }
-
 
 // -----------------------------------------------------
 // Reset
@@ -250,6 +246,7 @@ resetBtn.addEventListener("click", () => {
     const ring = document.querySelector(".ring-progress");
 
     if (ring) {
+
         const radius = 46;
         const circumference = 2 * Math.PI * radius;
 
@@ -257,7 +254,6 @@ resetBtn.addEventListener("click", () => {
         ring.style.strokeDashoffset = circumference;
     }
 });
-
 
 // -----------------------------------------------------
 // Filter buttons
@@ -269,7 +265,9 @@ document.querySelectorAll(".filter-chip").forEach(button => {
 
         document
             .querySelectorAll(".filter-chip")
-            .forEach(btn => btn.classList.remove("active"));
+            .forEach(btn =>
+                btn.classList.remove("active")
+            );
 
         button.classList.add("active");
     });

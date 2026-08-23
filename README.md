@@ -18,6 +18,10 @@ Upload a PDF resume and get an instant AI-powered analysis — score, summary, s
 
 [![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-success?style=for-the-badge)](https://ai-resume-analyzer-frontend-1llv.onrender.com)
 
+# 🤖 AI Resume Analyzer
+
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-success?style=for-the-badge)](https://ai-resume-analyzer-frontend-1llv.onrender.com)
+
 ## Features
 
 - Upload a PDF resume via a clean web interface

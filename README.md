@@ -13,12 +13,7 @@ Upload a PDF resume and get an instant AI-powered analysis — score, summary, s
 ![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Uvicorn](https://img.shields.io/badge/UVICORN-499848?style=for-the-badge&logo=gunicorn&logoColor=white)
 
-
 ## 🚀 Live Demo
-
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-success?style=for-the-badge)](https://ai-resume-analyzer-frontend-1llv.onrender.com)
-
-# 🤖 AI Resume Analyzer
 
 [![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-success?style=for-the-badge)](https://ai-resume-analyzer-frontend-1llv.onrender.com)
 

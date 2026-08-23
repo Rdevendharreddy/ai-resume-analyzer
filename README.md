@@ -2,6 +2,17 @@
 
 Upload a PDF resume and get an instant AI-powered analysis — score, summary, skills, strengths, and improvement suggestions — powered by Google's Gemini API.
 
+## Tech Stack
+
+![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FASTAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Gemini](https://img.shields.io/badge/GEMINI-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
+![PyPDF](https://img.shields.io/badge/PYPDF-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Uvicorn](https://img.shields.io/badge/UVICORN-499848?style=for-the-badge&logo=gunicorn&logoColor=white)
+
 ## Features
 
 - Upload a PDF resume via a clean web interface
@@ -16,16 +27,7 @@ Upload a PDF resume and get an instant AI-powered analysis — score, summary, s
   - **Improvement suggestions**
 - Comprehensive error handling with user-friendly messages
 
-## Tech Stack
 
-![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FASTAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Gemini](https://img.shields.io/badge/GEMINI-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
-![PyPDF](https://img.shields.io/badge/PYPDF-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Uvicorn](https://img.shields.io/badge/UVICORN-499848?style=for-the-badge&logo=gunicorn&logoColor=white)
 
 ## Example Workflow
 

@@ -1,4 +1,4 @@
-# AI Resume Analyzer https://ai-resume-analyzer-frontend-1llv.onrender.com/
+# AI Resume Analyzer:https://ai-resume-analyzer-frontend-1llv.onrender.com/
 
 Upload a PDF resume and get an instant AI-powered analysis — score, summary, skills, strengths, and improvement suggestions — powered by Google's Gemini API.
 

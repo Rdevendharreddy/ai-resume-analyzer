@@ -1,4 +1,4 @@
-# AI Resume Analyzer:https://ai-resume-analyzer-frontend-1llv.onrender.com/
+# AI Resume Analyzer
 
 Upload a PDF resume and get an instant AI-powered analysis — score, summary, skills, strengths, and improvement suggestions — powered by Google's Gemini API.
 
@@ -25,85 +25,6 @@ Upload a PDF resume and get an instant AI-powered analysis — score, summary, s
 | PDF      | PyPDF                        |
 | Frontend | HTML, CSS, JavaScript (Fetch)|
 
-## Architecture
-
-```
-Browser (frontend/)        FastAPI (backend/)
-  │                            │
-  │  POST /analyze-resume      │
-  ├───────────────────────────►│
-  │    (PDF file)              │
-  │                            ├──► PyPDF: extract text
-  │                            ├──► Gemini API: analyze
-  │    JSON response           │
-  │◄───────────────────────────┤
-  │                            │
-  └─── Render results ─────────┘
-```
-
-## Installation
-
-### 1. Clone the repository
-
-```bash
-git clone <your-repo-url>
-cd ai-resume-analyzer
-```
-
-### 2. Set up the backend
-
-```bash
-cd backend
-python -m venv venv
-
-# Windows
-.\venv\Scripts\activate
-
-# macOS / Linux
-source venv/bin/activate
-
-pip install -r requirements.txt
-```
-
-### 3. Configure environment
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` and add your Gemini API key:
-
-```
-GEMINI_API_KEY=your_actual_api_key_here
-```
-
-Get a free API key at: https://aistudio.google.com/app/apikey
-
-## Running the Application
-
-### Start the backend
-
-```bash
-cd backend
-.\venv\Scripts\activate   # or source venv/bin/activate
-uvicorn main:app --reload --port 8000
-```
-
-The API will be available at `http://localhost:8000`.
-
-Verify with: `http://localhost:8000/api/health`
-
-### Open the frontend
-
-Open `frontend/index.html` directly in your browser, or serve it:
-
-```bash
-cd frontend
-python -m http.server 5500
-```
-
-Then visit `http://localhost:5500`.
-
 ## Example Workflow
 
 1. Open the frontend in your browser
@@ -111,13 +32,6 @@ Then visit `http://localhost:5500`.
 3. Click **Analyze Resume**
 4. Wait a few seconds for Gemini to analyze
 5. View your score, summary, skills, strengths, and suggestions
-
-## API Endpoints
-
-| Method | Endpoint           | Description              |
-| ------ | ------------------ | ------------------------ |
-| GET    | `/api/health`      | Health check             |
-| POST   | `/analyze-resume`  | Upload & analyze resume  |
 
 ## Future Improvements
 

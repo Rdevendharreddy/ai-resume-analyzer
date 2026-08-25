@@ -15,7 +15,7 @@ Upload a PDF resume and get an instant AI-powered analysis — score, summary, s
 
 ## 🚀 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-success?style=for-the-badge)](https://ai-resume-analyzer-frontend-1llv.onrender.com)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Website-success?style=for-the-badge)](https://ai-resume-analyzer-one-vert.vercel.app/)
 
 ## Features
 
